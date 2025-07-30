@@ -1,8 +1,9 @@
-# languageSpeed
+# Computer Language Speed Comparison
 
 This project was inspired by a youtube video talking about Go Lang and Python speed.
 https://www.youtube.com/watch?v=Q0hWo6LmUOw&list=WL&index=2
 
+So just curious, implemented the same idea with different languages, C / C ++ / JAVA / Go / Python / Numpy to see how it goes. 
 It said, Python numpy is faster than go. 
 The code shows something different, the numpy runs even slower.
 
@@ -18,7 +19,7 @@ make clean  // delete files
 
 
 ## Output
-With the random value assignment, the Go lang runs even faster than C/Java, becomes No 1.
+With the random value initialization, the Go lang runs even faster than C/Java, becomes No 1 (306 < 390 < 448).
 ```
 $ make run
 ./dotproductc
@@ -31,10 +32,10 @@ go run dotproduct.go
  Golang LEN : 10000000, init : 231 ms, dot product : 75 ms, total : 306 ms
 python3 dotproduct.py
  numpy version :  1.26.4
- Python LEN : 10000000  init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms
+ Python LEN : 10000000 init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms
 ```
 
-Since the random generation also takes some time, and different languages have different implementation. so replacee it with a constant value '0.01'. The result shows something different, C++ becomes No 1 :
+Since the random value generation also takes some time, and the different languages have different implementations. so replace it with a constant value '0.01'. The result shows something different, C++ becomes No 1 (70 < 74 < 99):
 
 ```
  $ make run
@@ -51,4 +52,4 @@ python3 dotproduct.py
  Python LEN : 10000000  init : 401 ms, dot product : 228 ms, total : 630 ms, numpy dot product : 574 ms
 ```
 
-If we care about the dot product calculation only, the Java seems No 1 (10<17<20).
+If we care about the dot product calculation only, the Java seems No 1 (10 < 17 < 20).
