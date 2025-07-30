@@ -8,7 +8,9 @@ The code shows something different, the numpy runs even slower.
 
 ## Usage
 `make
+
 make run
+
 make clean  // delete files
 `
 
