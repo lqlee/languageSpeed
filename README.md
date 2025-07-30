@@ -7,20 +7,20 @@ It said, Python numpy is faster than go.
 The code shows something different, the numpy runs even slower.
 
 ## Usage
-`make`
-`make all // build` 
+```
+make
+make all // build
 
-`make run  // run all of them`
+make run  // run all of them
 
-`make clean  // delete files `
+make clean  // delete files 
+```
 
 
 ## Output
 ```
 $ make run
-
 ./dotproductc
-
  C  LEN : 10000000, init : 431 ms, dot product : 17 ms, total : 448 ms
 ./dotproductcpp
  C++  LEN : 10000000, init : 1714 ms, dot product : 20 ms.  total : 1734 ms
