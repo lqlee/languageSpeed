@@ -37,31 +37,31 @@ if __name__ == "__main__":
   #print(" memRss : {:,} ".format( memRss))
 
   #get_memory_usage()
-  print(f' LEN : {LEN}  init two arrays, ')
+  #print(f' LEN : {LEN}  init two arrays, ')
   start = time.time()
   for i in range(LEN) :
     arr.append(rd.random())
     brr.append(rd.random())
-  end = time.time()
+  mid = time.time()
   #get_memory_usage()
   #print(f' python two arrays init time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms ')
-  print(f' python two arrays init time {int(1000 * (end - start))} ms,  ')
+  #print(f' python two arrays init time {int(1000 * (end - start))} ms,  ')
 
   #memRss = get_process_memory()
   #print(" memRss : {:,} ".format( memRss))
-  start = time.time()
+  #start = time.time()
   res = dotProduct(arr, brr)
   end = time.time()
   #get_memory_usage()
   #print(f' python time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms. result : {res} ')
-  print(f' python time {int(1000 * (end - start))} ms,  ')
+  #print(f' python time {int(1000 * (end - start))} ms,  ')
 
-  start = time.time()
+  npStart = time.time()
   res = np.dot(arr, brr)
-  end = time.time()
+  npEnd = time.time()
   #get_memory_usage()
   #print(f' numpy time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms.  result : {res} ')
-  print(f' numpy time {int(1000 * (end - start))} ms,  ')
-
-
+  print(f' LEN : {LEN}  init two arrays : {int(1000 * (mid - start))} ms, ' +
+    f'dot product time : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms, ' +
+    f' numpy dot product time : {int(1000 * (npEnd - npStart))} ms,  ')
  
