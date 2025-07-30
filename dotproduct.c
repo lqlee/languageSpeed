@@ -30,8 +30,8 @@ int main () {
   arr = (double*) malloc(LEN * sizeof(double));
   brr = (double*) malloc(LEN * sizeof(double));
   for (int i = 0; i < LEN; i ++ ) {
-      arr[i] = (double)rand() / (RAND_MAX + 1.0);
-      brr[i] = (double)rand() / (RAND_MAX + 1.0);
+      arr[i] = 0.01; // (double)rand() / (RAND_MAX + 1.0);
+      brr[i] = 0.01; // (double)rand() / (RAND_MAX + 1.0);
   }
 
   if (clock_gettime(CLOCK_REALTIME, &spec) == -1) {

@@ -27,8 +27,8 @@ int main () {
   arr = (double *) malloc(LEN * sizeof(double));
   brr = (double *) malloc(LEN * sizeof(double));
   for (int i = 0; i < LEN; i ++ ) {
-    arr[i] = dis(gen);
-    brr[i] = dis(gen);
+    arr[i] = 0.01; // dis(gen);
+    brr[i] = 0.01; // dis(gen);
   }
 
   now = chrono::system_clock::now();

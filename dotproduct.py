@@ -40,8 +40,8 @@ if __name__ == "__main__":
   #print(f' LEN : {LEN}  init two arrays, ')
   start = time.time()
   for i in range(LEN) :
-    arr.append(rd.random())
-    brr.append(rd.random())
+    arr.append(0.01) #rd.random())
+    brr.append(0.01) #rd.random())
   mid = time.time()
   #get_memory_usage()
   #print(f' python two arrays init time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms ')
