@@ -50,3 +50,5 @@ python3 dotproduct.py
  numpy version :  1.26.4
  Python LEN : 10000000  init : 401 ms, dot product : 228 ms, total : 630 ms, numpy dot product : 574 ms
 ```
+
+If we care about the dot product calculation only, the Java seems No 1 (10<17<20).
