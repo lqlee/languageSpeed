@@ -9,7 +9,7 @@ const LEN = 10000000
 
 func main() {
   // memUsage()
-  fmt.Printf(" go dotProduct array size :  %d \n", LEN )
+  // fmt.Printf(" go dotProduct array size :  %d \n", LEN )
   
   start0 := time.Now()
   arr := [LEN] float64 {}
@@ -18,13 +18,14 @@ func main() {
     arr[i] = rand.Float64()
     brr[i] = rand.Float64()
   }
-  fmt.Printf(" go 2 arrays init  takes  %d ms\n", time.Since(start0).Milliseconds() )
+  // fmt.Printf(" go 2 arrays init  takes  %d ms\n", time.Since(start0).Milliseconds() )
   // memUsage()
 
   start := time.Now()
   dotProduct (arr, brr)
-  fmt.Printf(" go dotProduct takes  %d ms, total : %d ms\n", 
-    time.Since(start).Milliseconds(), time.Since(start0).Milliseconds() )
+  fmt.Printf(" Golang LEN : %d, init : %d ms, dot product : %d ms, total : %d ms\n", 
+    LEN, time.Since(start0).Milliseconds(), time.Since(start).Milliseconds(),
+    time.Since(start0).Milliseconds() )
   
   // memUsage()
 }
