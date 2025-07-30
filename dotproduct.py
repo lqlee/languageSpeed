@@ -61,7 +61,6 @@ if __name__ == "__main__":
   npEnd = time.time()
   #get_memory_usage()
   #print(f' numpy time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms.  result : {res} ')
-  print(f' Python LEN : {LEN}  init two arrays : {int(1000 * (mid - start))} ms, ' +
-    f'dot product time : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms, ' +
-    f' numpy dot product time : {int(1000 * (npEnd - npStart))} ms,  ')
- 
+  print(f' Python LEN : {LEN}  init : {int(1000 * (mid - start))} ms, ' +
+    f'dot product : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms,' +
+    f' numpy dot product : {int(1000 * (npEnd - npStart))} ms,  ')

@@ -26,11 +26,11 @@ $ make run
  C++  LEN : 10000000, init : 1714 ms, dot product : 20 ms.  total : 1734 ms
 java DotProduct
  JAVA  LEN : 10000000, init : 382, dot product : 8 ms, total : 390 ms
-python3 dotproduct.py
- numpy version :  1.26.4
- Python LEN : 10000000  init two arrays : 1084 ms, dot product time : 225 ms, total : 1309 ms,  numpy dot product time : 591 ms,
 go run dotproduct.go
  Golang LEN : 10000000, init : 231 ms, dot product : 75 ms, total : 306 ms
+python3 dotproduct.py
+ numpy version :  1.26.4
+ Python LEN : 10000000  init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms,
 ```
 
 Since the random generation also takes some time, and different languages have different implementation. so replacee it with a constant value '0.01'. The result shows something different :
@@ -43,9 +43,9 @@ Since the random generation also takes some time, and different languages have d
  C++  LEN : 10000000, init : 50 ms, dot product : 20 ms.  total : 70 ms
 java DotProduct
  JAVA  LEN : 10000000, init : 64, dot product : 10 ms, total : 74 ms
-python3 dotproduct.py
- numpy version :  1.26.4
- Python LEN : 10000000  init two arrays : 401 ms, dot product time : 228 ms, total : 630 ms,  numpy dot product time : 574 ms,
 go run dotproduct.go
  Golang LEN : 10000000, init : 131 ms, dot product : 88 ms, total : 219 ms
+python3 dotproduct.py
+ numpy version :  1.26.4
+ Python LEN : 10000000  init : 401 ms, dot product : 228 ms, total : 630 ms, numpy dot product : 574 ms,
 ```

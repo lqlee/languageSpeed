@@ -14,8 +14,8 @@ run:
 	./dotproductc
 	./dotproductcpp
 	java DotProduct
-	python3 dotproduct.py
 	go run dotproduct.go
+	python3 dotproduct.py
 
 clean:
 	rm -f DotProduct.class dotproductc dotproductcpp
