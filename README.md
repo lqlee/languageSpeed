@@ -16,7 +16,7 @@ The code shows something different, the numpy runs even slower.
 
 
 ## Output
-`
+```
 $ make run
 
 ./dotproductc
@@ -31,4 +31,4 @@ python3 dotproduct.py
  Python LEN : 10000000  init two arrays : 1084 ms, dot product time : 225 ms, total : 1309 ms,  numpy dot product time : 591 ms,
 go run dotproduct.go
  Golang LEN : 10000000, init : 231 ms, dot product : 75 ms, total : 231 ms
-`
+```
