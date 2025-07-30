@@ -1,24 +1,22 @@
 
-all : DotProduct.class dotproductc dotproductcpp
+all: DotProduct.class dotproductc dotproductcpp
 
-DotProduct.class :
-  javac DotProduct.java
+DotProduct.class : DotProduct.java
+	javac DotProduct.java
 
-dotproductc :
-  gcc dotproduct.c -o dotproductc
+dotproductc : dotproduct.c 
+	gcc dotproduct.c -o dotproductc
 
-dotproductcpp :
-  g++ dotproduct.cpp -o dotproductcpp
+dotproductcpp : dotproduct.cpp
+	g++ dotproduct.cpp -o dotproductcpp
 
-run :
-  ./dotproductc
-  ./dotproductcpp
-  java DotProduct
-  python3 dotproduct.py
-  go run dotproduct.go
+run:
+	./dotproductc
+	./dotproductcpp
+	java DotProduct
+	python3 dotproduct.py
+	go run dotproduct.go
 
-clean :
-  rm -f DotProduct.class
-  rm -f dotproductc
-  rm -f dotproductcpp
+clean:
+	rm -f DotProduct.class dotproductc dotproductcpp
 
