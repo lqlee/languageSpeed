@@ -18,6 +18,7 @@ make clean  // delete files
 
 
 ## Output
+With the random value assignment, the Go lang runs even faster than C/Java, becomes No 1.
 ```
 $ make run
 ./dotproductc
@@ -33,7 +34,7 @@ python3 dotproduct.py
  Python LEN : 10000000  init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms
 ```
 
-Since the random generation also takes some time, and different languages have different implementation. so replacee it with a constant value '0.01'. The result shows something different :
+Since the random generation also takes some time, and different languages have different implementation. so replacee it with a constant value '0.01'. The result shows something different, C++ becomes No 1 :
 
 ```
  $ make run
