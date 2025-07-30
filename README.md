@@ -30,7 +30,7 @@ go run dotproduct.go
  Golang LEN : 10000000, init : 231 ms, dot product : 75 ms, total : 306 ms
 python3 dotproduct.py
  numpy version :  1.26.4
- Python LEN : 10000000  init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms,
+ Python LEN : 10000000  init : 1084 ms, dot product : 225 ms, total : 1309 ms, numpy dot product : 591 ms
 ```
 
 Since the random generation also takes some time, and different languages have different implementation. so replacee it with a constant value '0.01'. The result shows something different :
@@ -47,5 +47,5 @@ go run dotproduct.go
  Golang LEN : 10000000, init : 131 ms, dot product : 88 ms, total : 219 ms
 python3 dotproduct.py
  numpy version :  1.26.4
- Python LEN : 10000000  init : 401 ms, dot product : 228 ms, total : 630 ms, numpy dot product : 574 ms,
+ Python LEN : 10000000  init : 401 ms, dot product : 228 ms, total : 630 ms, numpy dot product : 574 ms
 ```

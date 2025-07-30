@@ -63,4 +63,4 @@ if __name__ == "__main__":
   #print(f' numpy time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms.  result : {res} ')
   print(f' Python LEN : {LEN}  init : {int(1000 * (mid - start))} ms, ' +
     f'dot product : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms,' +
-    f' numpy dot product : {int(1000 * (npEnd - npStart))} ms,  ')
+    f' numpy dot product : {int(1000 * (npEnd - npStart))} ms')
