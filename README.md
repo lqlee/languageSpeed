@@ -53,3 +53,22 @@ python3 dotproduct.py
 ```
 
 If we care about the dot product calculation only, the Java seems No 1 (10 < 17 < 20).
+
+after review the video again, I found the issue why numpy version is not faster, because I do not convert the arrays with numpy.
+After conversion, numpy version becomes No 1 (dot product only), even faster than Java.
+
+```
+ $ make run
+./dotproductc
+ C  LEN : 10000000, init : 79 ms, dot product : 18 ms, total : 97 ms
+./dotproductcpp
+ C++  LEN : 10000000, init : 51 ms, dot product : 19 ms.  total : 70 ms
+java DotProduct
+ JAVA  LEN : 10000000, init : 63, dot product : 9 ms, total : 72 ms
+go run dotproduct.go
+ Golang LEN : 10000000, init : 183 ms, dot product : 115 ms, total : 298 ms
+python3 dotproduct.py
+ Python LEN : 10000000  init : 391 ms, dot product : 228 ms, total : 619 ms,
+ numpy version :  1.26.4
+ numpy array conversion : 445 ms, numpy dot product : 6 ms, total : 452 ms
+```
