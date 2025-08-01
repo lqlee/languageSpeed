@@ -31,7 +31,6 @@ def get_process_memory():
 if __name__ == "__main__":
   #get_memory_usage()
   arr, brr = [], []
-  print(' numpy version : ', np.__version__)
 
   #memRss = get_process_memory()
   #print(" memRss : {:,} ".format( memRss))
@@ -56,11 +55,16 @@ if __name__ == "__main__":
   #print(f' python time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms. result : {res} ')
   #print(f' python time {int(1000 * (end - start))} ms,  ')
 
+  arr = np.array(arr)
+  brr = np.array(brr)
   npStart = time.time()
   res = np.dot(arr, brr)
   npEnd = time.time()
   #get_memory_usage()
   #print(f' numpy time {int(1000 * (end - start))} ms, start : {start} ms, end : {end} ms.  result : {res} ')
   print(f' Python LEN : {LEN}  init : {int(1000 * (mid - start))} ms, ' +
-    f'dot product : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms,' +
-    f' numpy dot product : {int(1000 * (npEnd - npStart))} ms')
+    f'dot product : {int(1000 * (end - mid))} ms, total : {int(1000 * (end - start))} ms,' )
+
+  print(' numpy version : ', np.__version__)
+  print(f' numpy array conversion : {int(1000 * (npStart - end))} ms, numpy dot product :' + 
+        f' {int(1000 * (npEnd - npStart))} ms, total : {int(1000 * (npEnd - end))} ms ')
