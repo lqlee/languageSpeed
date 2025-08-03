@@ -53,6 +53,8 @@ python3 dotproduct.py
 
 If we care about the dot product calculation only, the Java seems No 1 (10 < 17 < 20).
 
+
+## Update
 after review the video again, I found the issue why numpy version is not faster, because I do not convert the arrays with numpy.
 After conversion, numpy version becomes No 1 (dot product only), even faster than Java.
 
