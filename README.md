@@ -75,4 +75,4 @@ python3 dotproduct.py
 ```
 
 ## Further Discussions
-From this example, we can see how good the Go random value generation is, and how bad the C++ one is.(231 - 131 :: 1714 - 50)
+From this example, we can see how good the Go random value generation is, and how bad the C++ one is.</br> (231 - 131 :: 1714 - 50)
