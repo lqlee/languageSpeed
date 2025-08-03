@@ -1,11 +1,11 @@
 # Computer Language Speed Comparison
 
-This project was inspired by a youtube video talking about Go Lang and Python speed.
+This project was inspired by a [youtube video](https://www.youtube.com/watch?v=Q0hWo6LmUOw&list=WL&index=2) talking about Go Lang and Python speed.
 https://www.youtube.com/watch?v=Q0hWo6LmUOw&list=WL&index=2
 
 So just curious, implemented the same idea with different languages, C / C ++ / JAVA / Go / Python / Numpy to see how it goes. 
 It said, Python numpy is faster than go. 
-The code shows something different, the numpy runs even slower.
+~~The code shows something different, the numpy runs even slower.~~
 
 ## Usage
 ```
