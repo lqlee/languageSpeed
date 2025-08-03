@@ -30,7 +30,7 @@ public class DotProduct {
     long end = System.currentTimeMillis();
 
     System.out.println(" JAVA  LEN : " + LEN + ", init : " 
-      + (mid - start) + ", dot product : " + (end - mid) 
+      + (mid - start) + " ms, dot product : " + (end - mid) 
       + " ms, total : " + (end - start) + " ms" );
   }
 }

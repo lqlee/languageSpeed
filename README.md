@@ -26,7 +26,7 @@ $ make run
 ./dotproductcpp
  C++  LEN : 10000000, init : 1714 ms, dot product : 20 ms.  total : 1734 ms
 java DotProduct
- JAVA  LEN : 10000000, init : 382, dot product : 8 ms, total : 390 ms
+ JAVA  LEN : 10000000, init : 382 ms, dot product : 8 ms, total : 390 ms
 go run dotproduct.go
  Golang LEN : 10000000, init : 231 ms, dot product : 75 ms, total : 306 ms
 python3 dotproduct.py
@@ -43,7 +43,7 @@ Since the random value generation also takes some time, and the different langua
 ./dotproductcpp
  C++  LEN : 10000000, init : 50 ms, dot product : 20 ms.  total : 70 ms
 java DotProduct
- JAVA  LEN : 10000000, init : 64, dot product : 10 ms, total : 74 ms
+ JAVA  LEN : 10000000, init : 64 ms, dot product : 10 ms, total : 74 ms
 go run dotproduct.go
  Golang LEN : 10000000, init : 131 ms, dot product : 88 ms, total : 219 ms
 python3 dotproduct.py
@@ -65,7 +65,7 @@ After conversion, numpy version becomes No 1 (dot product only), even faster tha
 ./dotproductcpp
  C++  LEN : 10000000, init : 51 ms, dot product : 19 ms.  total : 70 ms
 java DotProduct
- JAVA  LEN : 10000000, init : 63, dot product : 9 ms, total : 72 ms
+ JAVA  LEN : 10000000, init : 63 ms, dot product : 9 ms, total : 72 ms
 go run dotproduct.go
  Golang LEN : 10000000, init : 183 ms, dot product : 115 ms, total : 298 ms
 python3 dotproduct.py
