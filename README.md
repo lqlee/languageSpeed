@@ -54,9 +54,9 @@ python3 dotproduct.py
 If we care about the dot product calculation only, the Java seems No 1 (10 < 17 < 20).
 
 
-## Update
-after review the video again, I found the issue why numpy version is not faster, because I do not convert the arrays with numpy.
-After conversion, numpy version becomes No 1 (dot product only), even faster than Java.
+## Updates
+After review the video again, I found the issue why the numpy version is not faster, because I did not convert the arrays with numpy.
+After conversion, the numpy version becomes No 1 (dot product only), even faster than Java (6 < 9).
 
 ```
  $ make run
@@ -73,3 +73,6 @@ python3 dotproduct.py
  numpy version :  1.26.4
  numpy array conversion : 445 ms, numpy dot product : 6 ms, total : 452 ms
 ```
+
+## Further Discussions
+From this example, we can see how good the Go random value generation is, and how bad the C++ one is.
