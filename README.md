@@ -76,7 +76,7 @@ python3 dotproduct.py
 
 After reviewed the numpy doc, found that numpy has its own array init, faster than Go.
 
-'''
+```
 $ make run
 ./dotproductc
  C  LEN : 10000000, init : 300 ms, dot product : 18 ms, total : 318 ms
@@ -90,7 +90,7 @@ python3 dotproduct.py
  Python LEN : 10000000  init : 439 ms, dot product : 254 ms, total : 693 ms,
  numpy version :  1.26.4
  numpy array init : 107 ms, numpy dot product : 6 ms, total : 114 ms
-'''
+```
 
 
 ## Further Discussions
