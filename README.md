@@ -74,5 +74,24 @@ python3 dotproduct.py
  numpy array conversion : 445 ms, numpy dot product : 6 ms, total : 452 ms
 ```
 
+After reviewed the numpy doc, found that numpy has its own array init, faster than Go.
+
+'''
+$ make run
+./dotproductc
+ C  LEN : 10000000, init : 300 ms, dot product : 18 ms, total : 318 ms
+./dotproductcpp
+ C++  LEN : 10000000, init : 1597 ms, dot product : 18 ms.  total : 1615 ms
+java DotProduct
+ JAVA  LEN : 10000000, init : 375 ms, dot product : 10 ms, total : 385 ms
+go run dotproduct.go
+ Golang LEN : 10000000, init : 274 ms, dot product : 114 ms, total : 388 ms
+python3 dotproduct.py
+ Python LEN : 10000000  init : 439 ms, dot product : 254 ms, total : 693 ms,
+ numpy version :  1.26.4
+ numpy array init : 107 ms, numpy dot product : 6 ms, total : 114 ms
+'''
+
+
 ## Further Discussions
 From this example, we can see how good the Go random value generation is, and how bad the C++ one is.</br> (231 - 131 :: 1714 - 50)

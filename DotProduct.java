@@ -16,8 +16,8 @@ public class DotProduct {
     var arr = new double[LEN];
     var brr = new double[LEN];
     for (int i = 0; i < LEN; i ++ ) {
-      arr[i] = 0.01; // random.nextDouble();
-      brr[i] = 0.01; // random.nextDouble();
+      arr[i] =  random.nextDouble();
+      brr[i] =  random.nextDouble();
     }
 
     long mid = System.currentTimeMillis();

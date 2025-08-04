@@ -2,7 +2,7 @@
 package main
 
 import ("fmt")
-//import ("math/rand")
+import ("math/rand")
 import ("time")
 import ("runtime")
 const LEN = 10000000
@@ -15,8 +15,8 @@ func main() {
   arr := [LEN] float64 {}
   brr := [LEN] float64 {}
   for i := 0; i < LEN; i ++ {
-    arr[i] = 0.01 // rand.Float64()
-    brr[i] = 0.01 // rand.Float64()
+    arr[i] =  rand.Float64()
+    brr[i] =  rand.Float64()
   }
   // fmt.Printf(" go 2 arrays init  takes  %d ms\n", time.Since(start0).Milliseconds() )
   // memUsage()
