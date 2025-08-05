@@ -1,6 +1,6 @@
 # Computer Language Speed Comparison
 
-This project was inspired by a [youtube video](https://www.youtube.com/watch?v=Q0hWo6LmUOw&list=WL&index=2) talking about Go Lang and Python speed.
+This project was inspired by a [youtube video](https://www.youtube.com/watch?v=Q0hWo6LmUOw&list=WL&index=2) talking about Go Lang and Python speed. and [this one](https://www.youtube.com/watch?v=pb6cmfYlogg)
 
 So just curious, implemented the same idea with different languages, C / C ++ / JAVA / Go / Python / Numpy to see how it goes. 
 It said, Python numpy is faster than Go. 
