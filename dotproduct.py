@@ -57,6 +57,7 @@ if __name__ == "__main__":
 
   arr = np.random.rand(LEN)
   brr = np.random.rand(LEN)
+  # print('len(arr) : ', len(arr), ', len(brr) : ', len(brr))
   npStart = time.time()
   res = np.dot(arr, brr)
   npEnd = time.time()
