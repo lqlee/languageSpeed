@@ -95,3 +95,13 @@ python3 dotproduct.py
 
 ## Further Discussions
 From this example, we can see how good the Go random value generation is, and how bad the C++ one is.</br> (231 - 131 :: 1714 - 50)
+
+## Dice
+when we convert the randint() loop to the randint() array generation and sum it. Python numpy takes almost half time as Go Lang.
+```
+go run  dice.go 99999999d99999999
+ Go Lang : 1419 ms, res : 5000131220556710
+ python3 dice.py 99999999d99999999
+ Python : 763 ms, res : 4999762141799202
+```
+
